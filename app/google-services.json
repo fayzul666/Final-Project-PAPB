@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229978800626",
+    "project_id": "notes-app-fp",
+    "storage_bucket": "notes-app-fp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229978800626:android:831f281c46a4fc321a6b6b",
+        "android_client_info": {
+          "package_name": "jul.mobile.notesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB679VeE6DHmiCenp4WO0h8IaPaBbQOpnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
