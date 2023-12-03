@@ -3,6 +3,7 @@ package jul.mobile.notesapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -37,7 +38,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         btRegister = findViewById(R.id.btRegister);
         
         btRegister.setOnClickListener(v -> createAccount());
-        btnLogin.setOnClickListener(v -> finish());
+        btnLogin.setOnClickListener(v -> startActivity(new Intent(CreateAccountActivity.this, LoginActivity.class)));
 
     }
 

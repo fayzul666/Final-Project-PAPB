@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvTitleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Notes App"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="32sp"
+        android:textColor="@color/colorSecondary"/>
+
+    <LinearLayout
+        android:id="@+id/helloSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/tvTitleLogin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello."
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorSecondary"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome back!"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorSecondary"
+            android:textSize="26sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/helloSign"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width= "350dp"
+            android:layout_height= "48dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:hint="Email"
+            android:textColorHint="@color/colorSecondary"
+            android:textColor="@color/colorSecondary"/>
+
+        <EditText
+            android:id="@+id/etPassLogin"
+            android:layout_width= "350dp"
+            android:layout_height= "48dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:hint="Password"
+            android:textColorHint="@color/colorSecondary"
+            android:textColor="@color/colorSecondary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btLogin"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:text="Login"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/pbLogin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:indeterminateTint="@color/colorSecondary"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/formLogin"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an account?" />
+
+        <TextView
+            android:id="@+id/tvRegistBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Register"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
